@@ -1,0 +1,46 @@
+const activities = [
+    "Read a book",
+    "Go for a walk",
+    "Watch a movie",
+    "Try a new recipe",
+    "Learn a new hobby",
+    "Do a puzzle",
+    "Write a story",
+    "Draw or paint",
+    "Listen to music",
+    "Exercise",
+    "Meditate",
+    "Play a game",
+    "Call a friend",
+    "Clean or organize",
+    "Learn a new language",
+    "Start a blog",
+    "Take photos of nature",
+    "Try yoga",
+    "Build a model or do some crafting",
+    "Watch a documentary",
+    "Plan your next vacation",
+    "Experiment with DIY projects",
+    "Try a new workout routine",
+    "Bake some cookies",
+    "Visit a local museum online",
+    "Learn to play a musical instrument",
+    "Make a scrapbook",
+    "Create a vision board",
+    "Write a letter to a friend",
+    "Organize your digital files",
+    "Explore a new genre of music",
+    "Volunteer online",
+    "Research your family tree",
+    "Learn basic coding",
+    "Host a virtual game night",
+    "Decorate a room in your house",
+    "Have a movie marathon",
+    "Try gardening or plant care",
+    "Create and follow a bucket list"
+];
+
+document.getElementById('randomButton').addEventListener('click', function() {
+    const randomActivity = activities[Math.floor(Math.random() * activities.length)];
+    document.getElementById('activity').innerText = randomActivity;
+});
